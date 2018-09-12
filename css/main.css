@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Nanum+Gothic:400,700,800|Noto+Serif+KR:200,300,400,500,600,700,900');
+/* reset */
+        body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,input,label,textarea,select,button {margin:0; padding:0;}
+        body,h1,h2,h3,h4,h5,h6 {font-size:12px;}
+        a {text-decoration:none; color:#333;}
+        img,fieldset {border:none;}
+        ul,ol,li {list-style:none;}
+        strong,em,address {font-style:normal; font-weight:normal;}
+        table {border-collapse:collapse;}
+#design_wrap{
+    width:100%;
+    height:100%;
+    font-family: 'EB Garamond','Noto Sans KR', 'nanumgothic', sans-serif;
+    overflow:hidden;
+}
+.section_wrap{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    background-color:#fff;
+    padding-top:150px;
+}
+/* main visual */
+.main_visual {
+    width:100%;
+    height:100vh;
+    position:relative;
+}
+.main_visual .main_video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+}
+.vp-player-layout{
+    top:0;
+}
+.main_visual .main_video iframe, 
+.main_visual .main_video object,
+.main_visual .main_video embed {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+}
+.main_visual .main_logo{
+    z-index:1;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+}
+
+/* section_wrap */
+.sub_wrap{
+    width:100%;
+}
+.line_intro{
+    width:85%;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+}
+.line_intro > div{
+    float:left;
+}
+.watch_wd .line_intro .img_box,.jw_box .line_intro .img_box{
+    width:60%;
+}
+.line_intro .txt_box{
+    width:40%;
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-70%);
+}
+.line_intro .txt_box .number{
+    font-size:65px;
+    letter-spacing:-4px;
+    font-style: italic;
+    color:#808080;
+}
+.line_intro .txt_box .num_line{
+    height:1px;
+    background-color:#808080;
+    width:50px;
+    position:absolute;
+    top:80px;
+}
+.line_intro .txt_box h2{
+    font-size:60px;
+    font-weight:600;
+    font-style:italic;
+    letter-spacing:-1px;
+    color:#333;
+    margin-left:-10px;
+} 
+.line_intro .txt_box p{
+    font-family: 'Noto Sans KR',sans-serif;
+    letter-spacing:-1px;
+    margin-top:8px;
+    font-size:16px;
+    color:#777;
+    line-height:180%;
+} 
+.line_banner{
+    background-size:cover;
+    height:60vh;
+    width:100%;
+    margin-top:140px;
+    z-index:4;
+    display:block;
+}
+.watch_box .line_intro .img_box{
+    float:right;
+        width: 50%;
+}
+.line_intro .img_box img{
+    width:100%;
+}
+.watch_box .line_intro .txt_box{
+    float:right;
+    left:7%;
+}
+.watch_wd .line_banner{
+    background:url(../img/wolf_ww_banner.jpg) no-repeat center center;
+}
+.watch_box .line_banner{
+    background:url(../img/wolf_wb_banner.jpg) no-repeat center center;
+}
+.jw_box .line_banner{
+    background:url(../img/wolf_jb_banner.jpg) no-repeat center center;
+}
+.jw_box .product_wrap{
+ margin-bottom:180px;
+}
+
+/* 상품불러오기 */
+.product_wrap{
+    display:block;
+	width:100%;
+    text-align:center;
+    margin-top:100px;
+    min-width:1260px
+} 
+
+.product_wrap h1{
+    display:block;
+    width:500px;
+    margin:0 auto;
+    text-align:center;
+    font-size:60px;
+    font-weight:600;
+    font-style: italic;
+    letter-spacing:-1px;
+    color:#333;
+}
+
+.product_list{
+    width:85%; margin:50px auto;
+} 
+
+.product_list li{
+	position:relative; display:inline-block; float:left; width:16.666%; height:350px;
+}
+
+.product_list li:last-child{
+    margin-right:0;
+}
+
+.product_list li img {
+    width:90%; margin-bottom: 10px;
+}    
+
+.product_list li .pd_name{
+	display: -webkit-box;
+    display:block;
+    clear: both;
+    margin: 0 auto;
+    width:180px;
+    line-height: 19px;
+    color:#777;
+    font-size: 13px;
+    font-family: nanumgothic;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    height: 60px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: center;
+}
+
+.product_list li a:hover {
+	text-decoration:none;
+	opacity:0.8;
+	transition:0.4s ease;
+}
+
+
